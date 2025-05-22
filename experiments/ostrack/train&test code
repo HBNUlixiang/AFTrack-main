@@ -1,0 +1,26 @@
+1.1got10k 训练
+--script
+ostrack
+--config
+vitb_256_mae_32x4_got10k_ep100
+--save_dir
+./output(FruTrack)
+
+ 1.2got10k测试
+ ostrack
+vitb_256_mae_32x4_got10k_ep100
+--dataset
+otb
+--threads
+8
+--num_gpus
+1
+
+2.1
+没训练完的384
+--script
+ostrack
+--config
+vitb_384_mae_32x4_ep300
+--save_dir
+./output(FruTrack-384train)
